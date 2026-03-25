@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import HochschuleLogo from "@/assets/Logo_der_Hochschule_Flensburg.png";
-import SoopLogo from "@/assets/SOOP-LOGO.svg";
+import GeomarLogo from "@/assets/geomar_logo.svg";
 
 export default function PartnerLogos() {
   return (
@@ -47,17 +47,17 @@ export default function PartnerLogos() {
             className="flex flex-col items-center p-6"
           >
             <div className="h-24 flex items-center mb-4">
-              <div className="bg-primary-500 dark:bg-primary-400 rounded-lg p-4">
+              <div className="bg-white dark:bg-gray-200 rounded-lg p-4">
                 <img
-                  src={SoopLogo}
-                  alt="SOOP"
+                  src={GeomarLogo}
+                  alt="GEOMAR"
                   className="h-16 w-auto object-contain"
                 />
               </div>
             </div>
-            <h3 className="font-semibold text-lg mb-2">SOOP</h3>
+            <h3 className="font-semibold text-lg mb-2">GEOMAR</h3>
             <p className="text-sm text-default-600 text-center">
-              Meeresforschungseinrichtung und Datenplattform
+              Helmholtz-Zentrum für Ozeanforschung Kiel
             </p>
           </motion.div>
         </div>

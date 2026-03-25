@@ -56,6 +56,6 @@ export const siteConfig = {
     github: "https://github.com/Maritime-Live-Information",
     livePlatform: "https://www.marlin-live.com",
     hochschule: "https://hs-flensburg.de",
-    soop: "https://soop.de",
+    geomar: "https://www.geomar.de",
   },
 };

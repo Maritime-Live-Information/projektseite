@@ -102,14 +102,14 @@ export default function ContactPage() {
                     <h3 className="font-semibold mb-2">Projektentwicklung</h3>
                     <p className="text-default-600">Dieses Projekt wird im Rahmen des Masterstudiengangs</p>
                     <p className="text-default-600">Angewandte Informatik an der Hochschule Flensburg</p>
-                    <p className="text-default-600">in Zusammenarbeit mit SOOP entwickelt.</p>
+                    <p className="text-default-600">in Zusammenarbeit mit GEOMAR entwickelt.</p>
                   </div>
 
                   <div>
                     <h3 className="font-semibold mb-2">Gemeinsam entwickelt von</h3>
                     <div className="flex gap-2 flex-wrap">
                       <Chip color="primary" variant="flat">Hochschule Flensburg</Chip>
-                      <Chip color="secondary" variant="flat">SOOP</Chip>
+                      <Chip color="secondary" variant="flat">GEOMAR</Chip>
                     </div>
                   </div>
 

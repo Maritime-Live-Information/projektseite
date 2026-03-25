@@ -37,7 +37,7 @@ export default function HomePage() {
                 >
                     <div className="text-center px-6">
                         <p className="text-lg text-default-700">
-                            Ein gemeinsames Masterprojekt der Hochschule Flensburg und SOOP zur
+                            Ein gemeinsames Masterprojekt der Hochschule Flensburg und GEOMAR zur
                             Echtzeit-Erfassung und Visualisierung von Meeres- und Wetterdaten in
                             verschiedenen Marinas - entwickelt im Rahmen des Masterstudiengangs
                             Angewandte Informatik.

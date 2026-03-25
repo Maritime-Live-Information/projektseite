@@ -168,9 +168,9 @@ export default function MilestonesPage() {
                       className={`px-3 py-1 rounded-full text-sm font-medium
                       ${
                         milestone.status === "completed"
-                          ? "bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300"
+                          ? "bg-primary-100 text-primary-700 dark:bg-primary-500 dark:text-white"
                           : milestone.status === "in-progress"
-                            ? "bg-primary-50 text-primary-800 dark:bg-primary-900/20 dark:text-primary-400"
+                            ? "bg-primary-50 text-primary-800 dark:bg-primary-400 dark:text-black"
                             : "bg-default-100 text-default-600"
                       }`}
                     >

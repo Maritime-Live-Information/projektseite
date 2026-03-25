@@ -1,6 +1,6 @@
 import { title, subtitle } from "@/components/primitives";
 import HochschuleLogo from "@/assets/Logo_der_Hochschule_Flensburg.png";
-import SoopLogo from "@/assets/SOOP-LOGO.svg";
+import GeomarLogo from "@/assets/geomar_logo.svg";
 
 export default function AboutPage() {
   return (
@@ -19,11 +19,11 @@ export default function AboutPage() {
           </h3>
           <p className="text-default-700 mb-6">
             In unserem gemeinsamen Masterprojekt arbeiten die Hochschule Flensburg
-            und SOOP zusammen an einer innovativen Lösung für Hafenmonitoring.
-            SOOP entwickelt und betreibt die Sensorboxen, welche die Messwerte per
+            und GEOMAR zusammen an einer innovativen Lösung für Hafenmonitoring.
+            GEOMAR entwickelt und betreibt die Sensorboxen, welche die Messwerte per
             LoRaWAN übermitteln. Die Sensorboxen sind dabei teilweise autark und
             werden mit Solarzellen betrieben. Das Studententeam der Hochschule
-            Flensburg entwickelt gemeinsam mit SOOP die Aufbereitung und
+            Flensburg entwickelt gemeinsam mit GEOMAR die Aufbereitung und
             Visualisierung der erfassten Daten.
           </p>
 
@@ -65,7 +65,7 @@ export default function AboutPage() {
           <p className="text-default-700 mb-4">
             Dieses gemeinsame Masterprojekt wird im Rahmen des Masterstudiengangs
             &quot;Angewandte Informatik&quot; von einem Team aus fünf Studierenden
-            in Zusammenarbeit mit SOOP durchgeführt. Gemeinsam entwickeln wir die
+            in Zusammenarbeit mit GEOMAR durchgeführt. Gemeinsam entwickeln wir die
             Aufbereitung und Visualisierung der Messwerte. Das Projekt läuft bis
             April 2026.
           </p>
@@ -85,15 +85,15 @@ export default function AboutPage() {
                 <p className="text-sm text-default-600">Masterstudiengang Angewandte Informatik</p>
               </div>
               <div className="text-center">
-                <div className="bg-primary-500 dark:bg-primary-400 rounded-lg p-3 w-fit mx-auto mb-3">
+                <div className="bg-white dark:bg-gray-200 rounded-lg p-3 w-fit mx-auto mb-3">
                   <img
-                    src={SoopLogo}
-                    alt="SOOP"
+                    src={GeomarLogo}
+                    alt="GEOMAR"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
-                <p className="font-semibold">SOOP</p>
-                <p className="text-sm text-default-600">IoT-Sensorik & Datenplattform</p>
+                <p className="font-semibold">GEOMAR</p>
+                <p className="text-sm text-default-600">Helmholtz-Zentrum für Ozeanforschung Kiel</p>
               </div>
             </div>
           </div>

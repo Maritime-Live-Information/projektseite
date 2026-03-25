@@ -3,7 +3,7 @@ import {Outlet, Link as RouterLink} from "react-router-dom";
 
 import {Navbar} from "@/components/navbar";
 import HochschuleLogo from "@/assets/Logo_der_Hochschule_Flensburg.png";
-import SoopLogo from "@/assets/SOOP-LOGO.svg";
+import GeomarLogo from "@/assets/geomar_logo.svg";
 
 export default function DefaultLayout() {
     return (
@@ -19,7 +19,7 @@ export default function DefaultLayout() {
                             <h4 className="font-semibold text-lg mb-3">MARLIN</h4>
                             <p className="text-sm text-default-600">
                                 Maritime Live Information - Ein gemeinsames Masterprojekt der
-                                Hochschule Flensburg und SOOP
+                                Hochschule Flensburg und GEOMAR
                             </p>
                         </div>
                         <div>
@@ -42,9 +42,9 @@ export default function DefaultLayout() {
                                 <Link
                                     isExternal
                                     className="text-sm text-default-600 hover:text-primary"
-                                    href="https://www.soop-platform.earth/de/startseite"
+                                    href="https://www.geomar.de"
                                 >
-                                    SOOP
+                                    GEOMAR
                                 </Link>
                                 <Link
                                     isExternal
@@ -73,20 +73,20 @@ export default function DefaultLayout() {
                     <div className="border-t border-default-200 dark:border-default-100 mt-8 pt-6">
                         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                             <p className="text-sm text-default-600">
-                                © 2024-2026 MARLIN Project. Alle Rechte vorbehalten.
+                                © 2026 MARLIN Project. Alle Rechte vorbehalten.
                             </p>
                             <div className="flex items-center gap-6">
-                                <div className="bg-white dark:bg-gray-200 rounded p-1">
+                                <div className="bg-white dark:bg-gray-200 rounded p-2">
                                     <img
                                         src={HochschuleLogo}
                                         alt="Hochschule Flensburg"
                                         className="h-6 w-auto object-contain"
                                     />
                                 </div>
-                                <div className="bg-primary-500 dark:bg-primary-400 rounded p-2">
+                                <div className="bg-white dark:bg-gray-200 rounded p-2">
                                     <img
-                                        src={SoopLogo}
-                                        alt="SOOP"
+                                        src={GeomarLogo}
+                                        alt="GEOMAR"
                                         className="h-6 w-auto object-contain"
                                     />
                                 </div>

@@ -56,7 +56,7 @@ export const Navbar = () => {
           <RouterLink to="/contact" title="Kontakt" className="flex items-center">
             <MailIcon className="text-default-500" />
           </RouterLink>
-          <Link isExternal href="https://github.com/HSFL-X-SOOP" title="GitHub">
+          <Link isExternal href="https://github.com/Maritime-Live-Information" title="GitHub">
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />

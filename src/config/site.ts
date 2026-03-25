@@ -53,7 +53,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/marlin-flensburg",
+    github: "https://github.com/Maritime-Live-Information",
     livePlatform: "https://www.marlin-live.com",
     hochschule: "https://hs-flensburg.de",
     soop: "https://soop.de",

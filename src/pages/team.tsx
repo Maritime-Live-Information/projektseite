@@ -89,12 +89,12 @@ export default function TeamPage() {
               </p>
             </CardHeader>
             <CardBody className="pt-2">
-              <p className="text-sm text-default-600 mb-4">
+              <p className="text-sm text-default-600 dark:text-default-700 mb-4">
                 {member.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {member.skills.map((skill) => (
-                  <Chip key={skill} color="primary" size="sm" variant="flat">
+                  <Chip key={skill} size="sm" variant="flat" className="bg-primary-100 text-primary-700 dark:bg-primary-400 dark:text-black">
                     {skill}
                   </Chip>
                 ))}

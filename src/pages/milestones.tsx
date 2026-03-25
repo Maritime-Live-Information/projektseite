@@ -45,20 +45,19 @@ const milestones = [
   },
   {
     title: "Release 2 - Mobile App",
-    status: "in-progress",
+    status: "completed",
     date: "Oktober 2025 - Januar 2026",
     description:
       "Mobile Anwendung mit dem Umfang der Webseite, optimiert für Smartphones mit zusätzlichen Features.",
     deliverables: [
       "iOS & Android App",
       "Push-Benachrichtigungen",
-      "Offline-Funktionalität",
       "Mobile-optimierte Charts",
     ],
   },
   {
     title: "Final Release - Public Displays",
-    status: "upcoming",
+    status: "completed",
     date: "Januar 2026 - April 2026",
     description:
       "Ansicht der Sensordaten auf öffentlichen Displays in Hafenmeisterbüros und an Stränden für umfassende Datenverfügbarkeit.",
@@ -85,7 +84,7 @@ const getProgressValue = (status: string) => {
 const getStatusColor = (status: string) => {
   switch (status) {
     case "completed":
-      return "success";
+      return "primary";
     case "in-progress":
       return "primary";
     default:
@@ -122,9 +121,9 @@ export default function MilestonesPage() {
                 <h3 className="font-semibold">Gesamtfortschritt</h3>
                 <span className="text-sm text-default-600">Bis April 2026</span>
               </div>
-              <Progress className="mb-2" color="primary" size="md" value={65} />
+              <Progress className="mb-2" color="primary" size="md" value={100} />
               <p className="text-sm text-default-600">
-                65% abgeschlossen - Aktuell bei Release 2 (Mobile App)
+                100% abgeschlossen - Alle Meilensteine erreicht
               </p>
             </CardBody>
           </Card>
@@ -147,9 +146,9 @@ export default function MilestonesPage() {
                       className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-bold
                       ${
                         milestone.status === "completed"
-                          ? "bg-success"
+                          ? "bg-primary"
                           : milestone.status === "in-progress"
-                            ? "bg-primary"
+                            ? "bg-primary-800"
                             : "bg-default-300"
                       }`}
                     >
@@ -169,9 +168,9 @@ export default function MilestonesPage() {
                       className={`px-3 py-1 rounded-full text-sm font-medium
                       ${
                         milestone.status === "completed"
-                          ? "bg-success-100 text-success-700 dark:bg-success-900/30 dark:text-success-300"
+                          ? "bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300"
                           : milestone.status === "in-progress"
-                            ? "bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300"
+                            ? "bg-primary-50 text-primary-800 dark:bg-primary-900/20 dark:text-primary-400"
                             : "bg-default-100 text-default-600"
                       }`}
                     >
@@ -196,7 +195,7 @@ export default function MilestonesPage() {
                     {milestone.deliverables.map((deliverable, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <span
-                          className={`text-xs ${milestone.status === "completed" ? "text-success" : "text-default-400"}`}
+                          className={`text-xs ${milestone.status === "completed" ? "text-primary" : "text-default-400"}`}
                         >
                           {milestone.status === "completed" ? "✓" : "○"}
                         </span>

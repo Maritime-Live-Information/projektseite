@@ -36,7 +36,7 @@ const advantages: AdvantagesProps[] = [
     icon: "🗺️",
     title: "Live Sensorkarte",
     description: "Interaktive Visualisierung aller Sensordaten mit Echtzeitwerten auf einer Karte.",
-    gradient: "from-green-500 to-teal-400",
+    gradient: "from-cyan-500 to-blue-400",
     delay: 0.3
   },
   {
@@ -62,7 +62,7 @@ export default function AdvantageCards() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-700 dark:to-primary-900 bg-clip-text text-transparent">
             Warum MARLIN?
           </h2>
           <p className="text-lg text-default-600 max-w-3xl mx-auto">

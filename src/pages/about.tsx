@@ -28,10 +28,10 @@ export default function AboutPage() {
           </p>
 
           <h3 className="text-xl font-semibold mb-4">Unsere Messwerte</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="bg-primary-50 dark:bg-primary-900/20 rounded-lg p-4">
-              <h4 className="font-semibold text-primary-700 dark:text-primary-300 mb-2">
-                Wasserdaten
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="bg-cyan-50 dark:bg-cyan-900/20 rounded-lg p-4 border border-cyan-200 dark:border-cyan-800/30">
+              <h4 className="font-semibold text-cyan-700 dark:text-cyan-300 mb-2">
+                🌊 Wasserdaten
               </h4>
               <ul className="space-y-1 text-sm">
                 <li>• Wassertemperatur</li>
@@ -39,9 +39,9 @@ export default function AboutPage() {
                 <li>• Wellenhöhe</li>
               </ul>
             </div>
-            <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4">
+            <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800/30">
               <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">
-                Winddaten
+                💨 Winddaten
               </h4>
               <ul className="space-y-1 text-sm">
                 <li>• Windrichtung</li>
@@ -50,9 +50,9 @@ export default function AboutPage() {
                 <li>• Windgeschwindigkeit Böen</li>
               </ul>
             </div>
-            <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4">
-              <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">
-                Luftdaten
+            <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-800/30">
+              <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">
+                🌤️ Luftdaten
               </h4>
               <ul className="space-y-1 text-sm">
                 <li>• Luftdruck</li>

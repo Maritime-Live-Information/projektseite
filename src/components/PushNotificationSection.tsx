@@ -87,7 +87,7 @@ export default function PushNotificationSection() {
               {[
                 { icon: "⚡", text: "Echtzeitwarnungen bei Unwetter" },
                 { icon: "🌊", text: "Hochwasseralarme und Wellenhöhe" },
-                { icon: "💨", text: "Sturmwarnungen mit Vorlaufzeit" },
+                { icon: "🌡️", text: "Temperatur- und Luftdruckänderungen" },
                 { icon: "⚓", text: "Personalisierte Hafenbenachrichtigungen" }
               ].map((feature, index) => (
                 <motion.div

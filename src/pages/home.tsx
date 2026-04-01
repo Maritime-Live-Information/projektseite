@@ -1,4 +1,5 @@
-import {motion} from "framer-motion";
+import {useState} from "react";
+import {motion, AnimatePresence} from "framer-motion";
 import {Button} from "@heroui/button";
 import {Link} from "@heroui/link";
 import {title, subtitle} from "@/components/primitives";
@@ -8,7 +9,15 @@ import AdvantageCards from "@/components/AdvantageCards";
 import PartnerLogos from "@/components/PartnerLogos";
 import PushNotificationSection from "@/components/PushNotificationSection";
 
+const videoOptions = [
+    {key: "short", label: "Kurzversion", src: "/shotVideo.mp4"},
+    {key: "full", label: "Vollversion", src: "/projectVideoMP4.mp4"},
+];
+
 export default function HomePage() {
+    const [activeVideo, setActiveVideo] = useState("short");
+    const currentVideo = videoOptions.find((v) => v.key === activeVideo)!;
+
     return (
         <>
             <section className="flex flex-col items-center justify-center gap-8 py-12 md:py-16 min-h-[80vh]">
@@ -107,7 +116,72 @@ export default function HomePage() {
                 <PushNotificationSection/>
             </div>
 
-            <PartnerLogos/>
+            <div className="relative left-[50%] right-[50%] -mx-[50vw] w-[100vw]">
+                <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-gray-100 via-blue-50/60 to-gray-100 dark:from-gray-800 dark:via-blue-950/40 dark:to-gray-800">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary-200/20 via-transparent to-cyan-200/20 dark:from-primary-900/20 dark:to-cyan-900/20" />
+
+                    <div className="relative max-w-5xl mx-auto px-6">
+                        <motion.div
+                            className="text-center mb-12"
+                            initial={{opacity: 0, y: 30}}
+                            whileInView={{opacity: 1, y: 0}}
+                            viewport={{once: true, margin: "-100px"}}
+                            transition={{duration: 0.6}}
+                        >
+                            <h2 className={title({size: "sm"})}>Das Projekt in&nbsp;</h2>
+                            <h2 className={title({size: "sm", color: "blue"})}>Aktion</h2>
+                            <p className="text-default-600 mt-4 max-w-xl mx-auto text-lg">
+                                Erlebe MARLIN im Einsatz – von der Sensorik bis zur Live-Plattform.
+                            </p>
+
+                            <div className="flex justify-center gap-2 mt-6">
+                                {videoOptions.map((option) => (
+                                    <button
+                                        key={option.key}
+                                        onClick={() => setActiveVideo(option.key)}
+                                        className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                                            activeVideo === option.key
+                                                ? "bg-primary-500 text-white shadow-lg shadow-primary-500/30"
+                                                : "bg-default-100 dark:bg-gray-700 text-default-600 dark:text-gray-300 hover:bg-default-200 dark:hover:bg-gray-600"
+                                        }`}
+                                    >
+                                        {option.label}
+                                    </button>
+                                ))}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="relative max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20 dark:ring-white/10"
+                            initial={{opacity: 0, scale: 0.92}}
+                            whileInView={{opacity: 1, scale: 1}}
+                            viewport={{once: true, margin: "-80px"}}
+                            transition={{duration: 0.7, ease: "easeOut"}}
+                        >
+                            <AnimatePresence mode="wait">
+                                <motion.video
+                                    key={currentVideo.key}
+                                    className="w-full aspect-video bg-black"
+                                    controls
+                                    playsInline
+                                    preload="metadata"
+                                    initial={{opacity: 0}}
+                                    animate={{opacity: 1}}
+                                    exit={{opacity: 0}}
+                                    transition={{duration: 0.3}}
+                                >
+                                    <source src={currentVideo.src} type="video/mp4"/>
+                                    Dein Browser unterstützt das Video-Format nicht.
+                                </motion.video>
+                            </AnimatePresence>
+                        </motion.div>
+                    </div>
+                </section>
+            </div>
+
+            <div className="relative left-[50%] right-[50%] -mx-[50vw] w-[100vw]">
+                <PartnerLogos/>
+            </div>
         </>
     );
 }

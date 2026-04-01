@@ -4,7 +4,7 @@ import GeomarLogo from "@/assets/geomar_logo.svg";
 
 export default function PartnerLogos() {
   return (
-    <section className="py-12 px-6 bg-default-50 dark:bg-default-100/50">
+    <section className="py-16 px-6 bg-gradient-to-b from-gray-100 via-gray-50 to-transparent dark:from-gray-800 dark:via-gray-900 dark:to-transparent">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

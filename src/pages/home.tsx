@@ -10,12 +10,12 @@ import PartnerLogos from "@/components/PartnerLogos";
 import PushNotificationSection from "@/components/PushNotificationSection";
 
 const videoOptions = [
-    {key: "short", label: "Kurzversion", src: "/shotVideo.mp4"},
     {key: "full", label: "Vollversion", src: "/projectVideoMP4.mp4"},
+    {key: "short", label: "Kurzversion", src: "/shotVideo.mp4"},
 ];
 
 export default function HomePage() {
-    const [activeVideo, setActiveVideo] = useState("short");
+    const [activeVideo, setActiveVideo] = useState("full");
     const currentVideo = videoOptions.find((v) => v.key === activeVideo)!;
 
     return (
